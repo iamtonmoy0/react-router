@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import  Error  from './error.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <Error/>,
   },
   {
     path:"/about",
