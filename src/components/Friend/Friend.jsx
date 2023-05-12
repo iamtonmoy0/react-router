@@ -4,7 +4,7 @@ export const Friend = (friend) => {
 		const {name,id,email,phone}=friend.friend;
 		const navigate = useNavigate()
 		const handleNavigation=()=>{
-			navigate(`/friend/${id}`)
+			navigate(`/friends/${id}`)
 		}
 	return (
 		<div className="friendCart">
