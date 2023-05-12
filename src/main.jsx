@@ -10,6 +10,7 @@ import {
 import { About } from './components/About/About.jsx'
 import { Price } from './components/Price/Price.jsx'
 import { Contact } from './components/Contact/Contact.jsx'
+import { Home } from './components/Home/Home.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     element: <App/>,
     errorElement: <Error/>,
     children:[
+      {
+        path:"/",
+        element:<Home/>
+      },
       {
         path:'/about',
         element:<About/>
